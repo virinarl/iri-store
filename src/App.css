@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+/*Agregado*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: gray;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover{
+  font-weight: bold;
+  color: blue;
+}
