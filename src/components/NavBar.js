@@ -1,11 +1,19 @@
-import React from "react";
+import React from 'react';
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
-    return <div>
-        <h1 className="header">Iri-store</h1>
-        <p><a href="#">Inicio</a></p>
-        <p><a href="#">Categorías</a></p>
-        </div>;
+    return <>
+        <nav className="header">
+            <h1>Iri-store</h1>
+            <div>
+                <p><a href="#">Inicio</a></p>
+                <p><a href="#">Productos</a></p>
+                <p><a href="#">Nosotros</a></p>
+                <p><a href="#">Contacto</a></p>
+                <CartWidget />
+            </div>
+        </nav>
+        </>;
 };
 
 export default NavBar
