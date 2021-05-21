@@ -3,16 +3,15 @@ import {useState} from 'react';
 
 const ItemCounts = ({initial , stock}) => {
     const [counter, setCounter] = useState (initial);
+      
 
     const updateCounter = (value) =>{
-        if (stock >= counter + 1) {
+                
+        if ((counter > 0 && value == -1 ) || (counter < stock && value == 1)){
             setCounter(counter + value);
-        } else {
+        }
+    }
 
-        }
-        
-          
-        }
     
     console.log(setCounter)    
     return <>
