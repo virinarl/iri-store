@@ -4,7 +4,7 @@ import CartWidget from './CartWidget';
 const NavBar = () => {
     return <div>
         <nav className="header">
-            <h1>Iri-store</h1>
+            <h1>Oriworld</h1>
             <div>
                 <p><a href="#">Inicio</a></p>
                 <p><a href="#">Productos</a></p>
