@@ -5,10 +5,10 @@ import ItemCounts from './components/ItemCount';
 
 function App() {
   return <>
-    <NavBar />
-    <ItemCounts stock={5} initial={1} />
-    <ItemListContainer greeting="Holaaa! Vengo a flotar..." />
-  </>;
+      <NavBar />
+      <ItemCounts stock={5} initial={1} />
+      <ItemListContainer greeting="Holaaa! Vengo a flotar..." />
+    </>
 }
 
-export default App;
+export default App
