@@ -7,7 +7,7 @@ import ItemCounts from './components/ItemCount';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar menu ={["Inicio","Productos","Nosotros","Contacto"]}/>
       <ItemListContainer greeting="Hola!!" />
       <ItemCounts stock={5} initial={1} />
     </div>

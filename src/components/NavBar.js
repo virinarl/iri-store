@@ -6,10 +6,8 @@ const NavBar = () => {
         <nav className="header">
             <h1>Oriworld</h1>
             <div>
-                <p><a href="#">Inicio</a></p>
-                <p><a href="#">Productos</a></p>
-                <p><a href="#">Nosotros</a></p>
-                <p><a href="#">Contacto</a></p>
+                {["Inicio","Productos","Nosotros","Contacto"].map(element => <p><a href="#">{element}</a></p>)}
+                
                 <CartWidget />
             </div>
         </nav>
