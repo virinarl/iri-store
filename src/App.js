@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCounts from './components/ItemCount';
+import ItemList from './components/ItemList';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <NavBar menu ={["Inicio","Productos","Nosotros","Contacto"]}/>
       <ItemListContainer greeting="Hola!!" />
       <ItemCounts stock={5} initial={1} />
+      <ItemList />
     </div>
   );
 }

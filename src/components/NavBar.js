@@ -1,13 +1,12 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 
-const NavBar = () => {
+const NavBar = ({menu}) => {
     return <div>
         <nav className="header">
             <h1>Oriworld</h1>
             <div>
-                {["Inicio","Productos","Nosotros","Contacto"].map(element => <p><a href="#">{element}</a></p>)}
-                
+                {menu.map(element => <p><a href="#">{element}</a></p>)}
                 <CartWidget />
             </div>
         </nav>
