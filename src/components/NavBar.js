@@ -2,7 +2,7 @@ import React from 'react';
 import CartWidget from './CartWidget';
 
 const NavBar = () => {
-    return <>
+    return <div>
         <nav className="header">
             <h1>Iri-store</h1>
             <div>
@@ -13,7 +13,7 @@ const NavBar = () => {
                 <CartWidget />
             </div>
         </nav>
-        </>;
+    </div>;
 };
 
 export default NavBar

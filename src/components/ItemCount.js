@@ -7,19 +7,17 @@ const ItemCounts = ({initial , stock}) => {
 
     const updateCounter = (value) =>{
                 
-        if ((counter > 0 && value == -1 ) || (counter < stock && value == 1)){
+        if ((counter > 0 && value === -1 ) || (counter < stock && value === 1)){
             setCounter(counter + value);
         }
     }
 
-    
-    console.log(setCounter)    
-    return <>
+    return <div>
         <h5>Contando</h5>
         <button onClick = {() => updateCounter(-1)}>Restar Uno</button>
         <button onClick = {() => updateCounter(1)}>Sumar Uno</button>
         Counter = {counter}
-    </>
+    </div>;
 }
 
 export default ItemCounts

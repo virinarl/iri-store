@@ -1,14 +1,17 @@
+import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCounts from './components/ItemCount';
 
 function App() {
-  return <>
+  return (
+    <div className="App">
       <NavBar />
+      <ItemListContainer greeting="Hola!!" />
       <ItemCounts stock={5} initial={1} />
-      <ItemListContainer greeting="Holaaa! Vengo a flotar..." />
-    </>
+    </div>
+  );
 }
 
-export default App
+export default App;
