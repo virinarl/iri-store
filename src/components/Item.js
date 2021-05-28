@@ -6,9 +6,8 @@ const Items = ({title, price, url}) =>{
         <div>
             <img src={url} alt={title} />
             <div>
-                <h3>{title}
-                </h3>
-                <p>{price}</p>
+                <h3>{title}</h3>
+                <p>${price}</p>
             </div>
         </div>
     )
