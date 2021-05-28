@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <NavBar menu ={["Inicio","Productos","Nosotros","Contacto"]}/>
       <ItemListContainer greeting="Hola!!" />
-      <ItemCounts stock={5} initial={1} />
       <ItemList />
     </div>
   );
