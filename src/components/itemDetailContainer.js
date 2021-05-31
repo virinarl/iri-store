@@ -6,8 +6,7 @@ const itemDetailContainer = () => {
     const[item, setItem] = useState([]); 
 
     const getItemById = (id) => Productos.find((product) => product.id === id); 
-    
-    
+        
     const getItems = (condition) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {

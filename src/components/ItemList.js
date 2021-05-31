@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Items from './Item';
 import Productos from '../data/infoProductos';
-import ItemCounts from './ItemCount';
+
 
 
 const ItemList = () => {
