@@ -1,0 +1,27 @@
+.itemCountMain{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    max-width: 270px;
+}
+
+.itemCountContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7px;
+    width: 100px;
+}
+
+.itemCountContainer:hover{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+.number{
+    font-size: 1.3rem;
+}
+
+.itemCountContainer button{
+    border: none;
+    background-color: white;
+    font-size: 1.3rem;
+}
