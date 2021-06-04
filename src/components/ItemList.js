@@ -1,7 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import Items from './Item';
+import Items from './Visual/Item';
 import Productos from '../data/infoProductos';
+import './styles/itemList.css';
 
 
 
@@ -33,14 +34,16 @@ const ItemList = () => {
     
     return (
         productos.map((producto) => (
-            <Items
-                key={producto.id}
-                title={producto.title}
-                price={producto.price}
-                url={producto.pictureUrl}
-                stock={producto.stock}
-            />
-            
+            <div>
+                <Items
+                    key={producto.id}
+                    title={producto.title}
+                    price={producto.price}
+                    url={producto.pictureUrl}
+                    stock={producto.stock}
+                    descripcion={producto.descripcion}
+                />
+            </div>
         )
         ));
 

@@ -1,0 +1,17 @@
+.itemContainer{
+    width: 300px;
+    border: 1px solid gray;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.itemPhoto{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.addItem{
+    align-items: center;
+}
