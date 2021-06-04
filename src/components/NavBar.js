@@ -6,7 +6,7 @@ const NavBar = ({menu}) => {
         <nav className="header">
             <h1>Oriworld</h1>
             <div>
-                {menu.map(element => <p><a href="#">{element}</a></p>)}
+                {menu.map(element => <p key={element}><a href="#">{element}</a></p>)}
                 <CartWidget />
             </div>
         </nav>

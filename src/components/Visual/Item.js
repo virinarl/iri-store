@@ -3,17 +3,14 @@ import ItemCounts from '../ItemCount';
 import './Styles/item.css';
 
 
-const Items = ({title, price, url, stock, key, descripcion}) =>{
+const Items = (props) =>{
     return (
-        <div key={key} className='itemContainer'>
-            <img src={url} alt={title} className='itemPhoto'/>
+        <div className='itemContainer'>
+            <img src={props.url} alt={props.title} className='itemPhoto'/>
             <div>
-                <h3>{title}</h3>
-                <p>${price}</p>
-                <p>{descripcion}</p>
-                <div className='addItem'>
-                    <ItemCounts initial={1} stock={stock} />
-                </div>
+                <h3>{props.title}</h3>
+                <p>${props.price}</p>
+                <ItemCounts initial={1} stock={props.stock} />
             </div>
         </div>
     )
