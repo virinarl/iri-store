@@ -1,0 +1,29 @@
+.header {
+  background-color: #fbf8b8;
+  display: grid;
+  grid-template-areas: "titulo navbar";
+  grid-template-columns: 2fr 2fr;
+}
+
+.header h1 {
+  grid-area: titulo;
+  padding-bottom: 1%;
+  color: gray;
+}
+
+.header div {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  font-weight: bold;
+}

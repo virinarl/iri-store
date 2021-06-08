@@ -11,7 +11,8 @@ const misProductos = [
         pictureUrl: amigorumiWolf,
         stock: 4,
         descripcion: 'Lorem ipsum dolor sit amet, consectetur.',
-        oferta: 0, 
+        oferta: 0,
+        categoria: 'peluche',
     },
     {
         id: 2,
@@ -21,6 +22,7 @@ const misProductos = [
         stock: 7,
         descripcion: 'Lorem ipsum dolor sit amet, consectetur.',
         oferta: 1,
+        categoria: 'bebes',
     },
     {
         id:3,
@@ -30,6 +32,7 @@ const misProductos = [
         stock: 2,
         descripcion: 'Lorem ipsum dolor sit amet, consectetur.',
         oferta: 0,
+        categoria: 'peluche',
     }
 ];
 
