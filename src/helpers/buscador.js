@@ -1,7 +1,6 @@
-import products from '../data/infoProductos';
+import products from "../data/infoProductos";
 
-const ItemBySale = (onSale) => products.find((product) => product.oferta === onSale);
+const ItemBySale = (onSale) =>
+  products.find((product) => product.oferta === onSale);
 
-export{
-    ItemBySale
-}
+export { ItemBySale };

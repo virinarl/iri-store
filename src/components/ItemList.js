@@ -5,36 +5,36 @@ import Productos from "../data/infoProductos";
 
 import "./styles/itemList.css";
 
-const ItemList = () => {
+const ItemList = ({ catName, id }) => {
   const [productos, setProductos] = useState([]);
 
-  //Promise
-  const obtenerProductos = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(Productos);
-    }, 1000);
-  });
-
-  //async
-  const ejecutarPromise = async () => {
-    try {
-      const result = await obtenerProductos;
-      setProductos(result);
-    } catch (error) {
-      alert("No pudimos cargar los productos");
-    }
-  };
-
   useEffect(() => {
-    ejecutarPromise();
-  }, []);
+    const getProducts = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(Productos);
+      }, 1000);
+    });
+
+    id
+      ? getProducts.then((res) => {
+          setProductos(res.filter((i) => i.id === id));
+        })
+      : catName
+      ? getProducts.then((res) => {
+          setProductos(res.filter((i) => i.categoria === catName));
+        })
+      : getProducts.then((res) => {
+          setProductos(res);
+        });
+  }, [catName, id]);
 
   return productos.map((producto) => (
     <div key={producto.id}>
       <Items
+        url={"/categorias/" + producto.categoria + "/" + producto.id}
         title={producto.title}
         price={producto.price}
-        url={producto.pictureUrl}
+        imagen={producto.pictureUrl}
         stock={producto.stock}
         descripcion={producto.descripcion}
       />

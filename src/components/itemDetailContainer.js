@@ -11,7 +11,6 @@ const ItemDetailContainer = ({ identificador }) => {
       setTimeout(() => {
         const result = ItemBySale(condition);
         resolve(result);
-        console.log(result);
       }, 1000);
     });
   };
