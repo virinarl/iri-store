@@ -9,7 +9,7 @@ const ItemDetailContainer = ({ identificador }) => {
   const getItems = (condition) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const result = ItemBySale(condition); //getProductById está en una carpeta llamada helpers, la cual me ayuda a dejar más limpio el código.
+        const result = ItemBySale(condition);
         resolve(result);
         console.log(result);
       }, 1000);

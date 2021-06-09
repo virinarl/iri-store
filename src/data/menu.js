@@ -5,7 +5,7 @@ const menu = [
   },
   {
     nombre: "Categorías",
-    url: "/categoria",
+    url: "/categorias",
   },
   {
     nombre: "Ofertas",

@@ -4,19 +4,22 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/itemDetailContainer";
+import CategoryContainer from "./components/CategoryContainer";
 
-import menu from "./data/menu";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar menu={menu} />
+      <NavBar />
       <Switch>
         <Route exact path="/">
           <ItemListContainer />
         </Route>
-        <Route path="/categoria">
+        <Route exact path="/categorias">
+          <CategoryContainer />
+        </Route>
+        <Route path="/categorias/:catName/:id">
           <ItemListContainer />
         </Route>
         <Route path="/ofertas">
