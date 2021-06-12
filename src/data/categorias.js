@@ -1,11 +1,15 @@
 const categorias = [
   {
-    nombre: "Bebe",
-    url: "/categorias/bebe",
+    nombre: "Bebes",
+    url: "/categorias/bebes",
   },
   {
     nombre: "Peluches",
-    url: "/categorias/peluche",
+    url: "/categorias/peluches",
+  },
+  {
+    nombre: "Accesorios",
+    url: "/categorias/accesorios",
   },
 ];
 
