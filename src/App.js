@@ -11,8 +11,8 @@ import "./App.css";
 
 function App() {
   return (
-    <CartProvider>
-      <BrowserRouter value={ }>
+    <CartProvider value={[]}>
+      <BrowserRouter>
         <NavBar />
         <Switch>
           <Route exact path="/">

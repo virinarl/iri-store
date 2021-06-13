@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import './styles/itemCounts.css'
 
-const ItemCounts = ({initial , stock}) => {
+const ItemCounts = ({initial , id, stock, setCount}) => {
     const [counter, setCounter] = useState (initial);
       
     const addCount = () => {
@@ -13,6 +13,12 @@ const ItemCounts = ({initial , stock}) => {
         setCounter(counter - 1);
     }
     
+    const addToCart = () => {
+        setCount({
+            id: id,
+            cantidad: counter,
+        });
+    }
     return (
         <div className='itemCountMain'>
             <div className='itemCountContainer'>
@@ -20,6 +26,7 @@ const ItemCounts = ({initial , stock}) => {
                 <span className='number'>{counter}</span>
                 <button onClick = {addCount} disabled={counter === stock && 'disabled'}>+</button>
             </div>
+            <button onClick = {addToCart}>Añadir</button>
         </div>
     )
 }

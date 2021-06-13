@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import ItemCounts from "../ItemCount";
 import "./Styles/item.css";
+import AddToCartButton from "../AddToCartButton";
 
-const Items = (props) => {
+const Item = (props) => {
   return (
     <div className="itemContainer">
-      <img src={props.imagen} alt={props.title} className="itemPhoto" />
       <Link to={props.url}>
+        <img src={props.imagen} alt={props.title} className="itemPhoto" />
         <div>
           <h3>{props.title}</h3>
           <p>${props.price}</p>
         </div>
       </Link>
-      <ItemCounts initial={1} stock={props.stock} />
+      <AddToCartButton id={props.id} stock={props.stock} />
     </div>
   );
 };
 
-export default Items;
+export default Item;
