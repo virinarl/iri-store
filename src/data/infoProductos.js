@@ -28,7 +28,7 @@ const misProductos = [
     pictureUrl: sonajeroBear,
     stock: 7,
     descripcion: "Lorem ipsum dolor sit amet, consectetur.",
-    oferta: 1,
+    oferta: 0,
     categoria: "bebes",
   },
   {
@@ -58,7 +58,7 @@ const misProductos = [
     pictureUrl: bonniesForBabies,
     stock: 3,
     descripcion: "Lorem ipsum dolor sit amet, consectetur.",
-    oferta: 0,
+    oferta: 1,
     categoria: "bebes",
   },
   {
